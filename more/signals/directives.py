@@ -5,6 +5,7 @@ from dectate import Action
 
 
 class SignalAction(Action):
+
     config = {
        'signal_registry': Namespace
     }
