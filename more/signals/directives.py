@@ -17,7 +17,7 @@ class SignalAction(Action):
         return (uuid4().hex, self.name)
 
     def perform(self, obj, signal_registry):
-        pass
+        pass  # pragma: no cover
 
 
 class ConnectSignalAction(SignalAction):
