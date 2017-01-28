@@ -1,0 +1,16 @@
+recursive-include more *.signals
+recursive-include more.signals *
+recursive-include docs *
+include *.txt
+include *.rst
+include *.md
+include .coveragerc
+include CHANGES
+include CREDITS
+include LICENSE
+include tox.ini
+global-exclude *.mo
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__/*
+
