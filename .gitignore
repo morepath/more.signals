@@ -1,0 +1,30 @@
+# standard
+*~
+*.pyc
+*.pyo
+*.swo
+*.swp
+*.egg-info
+/.cache
+/.coverage
+/.tests
+/.Python
+/PYSMELLTAGS*
+__pycache__
+/htmlcov
+
+/env
+/bin
+/build
+/dist
+/include
+/lib
+/src
+/var
+/tmp
+
+# local
+.DS_Store
+pyvenv.cfg
+/docs/_build
+pip-selfcheck.json
