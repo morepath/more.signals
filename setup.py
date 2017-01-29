@@ -23,7 +23,7 @@ def read_md(f):
     return io.open(f, encoding='utf-8').read()
 
 
-version = '0.1.0.dev0'
+version = '0.1.0'
 
 long_description = '\n'.join((
     read_md('README.md'),
