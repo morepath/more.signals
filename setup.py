@@ -48,7 +48,8 @@ docs_require = [
 ]
 
 pypi_require = [
-    'pypandoc'
+    'pypandoc',
+    'twine'
 ]
 
 
