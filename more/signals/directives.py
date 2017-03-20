@@ -10,8 +10,9 @@ class SignalAction(Action):
        'signal_registry': Namespace
     }
 
-    def __init__(self, name):
+    def __init__(self, name, doc=None):
         self.name = name
+        self.doc = doc
 
     def identifier(self, signal_registry):
         return (uuid4().hex, self.name)
@@ -23,7 +24,7 @@ class SignalAction(Action):
 class ConnectSignalAction(SignalAction):
 
     def perform(self, obj, signal_registry):
-        signal_registry.signal(self.name).connect(obj)
+        signal_registry.signal(self.name, self.doc).connect(obj)
 
 
 class DisconnectSignalAction(SignalAction):

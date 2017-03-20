@@ -16,5 +16,5 @@ class App(morepath.App):
     def signals(self):
         return self.config.signal_registry
 
-    def signal(self, event):
-        return self.signals.signal(event)
+    def signal(self, name, doc=None):
+        return self.signals.signal(name, doc)
