@@ -56,11 +56,11 @@ pypi_require = [
 setup(
     name='more.signals',
     version=version,
-    url='https://github.com/blaflamme/more.signals',
+    url='https://github.com/morepath/more.signals',
     license='BSD',
     author='Blaise Laflamme',
     author_email='blaise@laflamme.org',
-    description='Events for Morepath',
+    description='Signals for Morepath',
     long_description=long_description,
     keywords='morepath events signals blinker',
     classifiers=[
