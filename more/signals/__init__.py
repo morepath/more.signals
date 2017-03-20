@@ -1,2 +1,2 @@
 # flake8: noqa
-from .main import SignalApp
+from .app import App as SignalApp

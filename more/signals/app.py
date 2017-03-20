@@ -7,7 +7,7 @@ from .directives import (
 )
 
 
-class SignalApp(morepath.App):
+class App(morepath.App):
 
     connect = directive(ConnectSignalAction)
     disconnect = directive(DisconnectSignalAction)
