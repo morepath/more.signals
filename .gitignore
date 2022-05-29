@@ -28,3 +28,5 @@ __pycache__
 pyvenv.cfg
 /docs/_build
 pip-selfcheck.json
+
+.tox/

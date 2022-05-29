@@ -1,2 +1,4 @@
-[run]
-omit = more/signals/tests/*
+[paths]
+source =
+    src
+    .tox/*/lib/python*/site-packages/
