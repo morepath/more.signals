@@ -1,10 +1,7 @@
 from dectate import directive
 import morepath
 
-from .directives import (
-    ConnectSignalAction,
-    DisconnectSignalAction
-)
+from .directives import ConnectSignalAction, DisconnectSignalAction
 
 
 class App(morepath.App):

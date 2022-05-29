@@ -6,9 +6,7 @@ from dectate import Action
 
 class SignalAction(Action):
 
-    config = {
-       'signal_registry': Namespace
-    }
+    config = {"signal_registry": Namespace}
 
     def __init__(self, name, doc=None):
         self.name = name
@@ -22,12 +20,10 @@ class SignalAction(Action):
 
 
 class ConnectSignalAction(SignalAction):
-
     def perform(self, obj, signal_registry):
         signal_registry.signal(self.name, self.doc).connect(obj)
 
 
 class DisconnectSignalAction(SignalAction):
-
     def perform(self, obj, signal_registry):
         signal_registry.signal(self.name).disconnect(obj)
