@@ -6,30 +6,17 @@ Signals for Morepath.
 
 from setuptools import setup, find_packages
 
-try:
-    import pypandoc
-except ImportError:
-    print("pypandoc not found, could not convert Markdown to RST")
-    pypandoc = None
-
 
 def read_md(f):
-    if pypandoc:
-        return pypandoc.convert(f, "rst")
     return open(f, encoding="utf-8").read()
 
 
 version = "0.2.0-dev0"
-
 long_description = "\n".join((read_md("README.md"), read_md("CHANGES.md")))
-
 install_requires = ["morepath", "blinker"]
-
 tests_require = ["pytest", "coverage", "pytest-cov", "webtest"]
-
 docs_require = ["sphinx", "docutils"]
-
-pypi_require = ["pypandoc", "twine"]
+pypi_require = ["twine"]
 
 
 setup(
@@ -41,6 +28,7 @@ setup(
     author_email="blaise@laflamme.org",
     description="Signals for Morepath",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     keywords="morepath events signals blinker",
     classifiers=[
         "License :: OSI Approved :: BSD License",
