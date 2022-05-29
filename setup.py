@@ -11,7 +11,7 @@ def read_md(f):
     return open(f, encoding="utf-8").read()
 
 
-version = "0.2.0-dev0"
+version = "0.2.0.dev0"
 long_description = "\n".join((read_md("README.md"), read_md("CHANGES.md")))
 install_requires = ["morepath", "blinker"]
 tests_require = ["pytest", "coverage", "pytest-cov", "webtest"]
@@ -33,8 +33,11 @@ setup(
     classifiers=[
         "License :: OSI Approved :: BSD License",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
     ],
     namespace_packages=["more"],
     packages=find_packages("src"),
@@ -45,5 +48,4 @@ setup(
     install_requires=install_requires,
     tests_require=tests_require,
     extras_require={"test": tests_require, "docs": docs_require, "pypi": pypi_require},
-    test_suite="more.signals",
 )
