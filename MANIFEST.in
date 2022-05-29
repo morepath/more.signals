@@ -13,3 +13,5 @@ global-exclude *.pyc
 global-exclude *.pyo
 global-exclude __pycache__/*
 recursive-include *.py
+include *.yaml
+recursive-include tests *.py
